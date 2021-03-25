@@ -5,7 +5,7 @@ namespace Solution {
 	operation Solve (N : Int, Uf : ((Qubit[], Qubit) => ())) : Int[] {
 		body {
 			mutable b = new Int[N];
-			using (qs = Qubit[N+1]) {
+			using (qs = Qubit[N+1] ) {
 				X(qs[N]);
 				for (i in 0..N) {
 					H(qs[i]);
